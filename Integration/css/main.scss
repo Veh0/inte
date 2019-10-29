@@ -1,0 +1,28 @@
+@import "app";
+
+section.main-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    margin-bottom: 3.325%;
+    filter: grayscale(40%);
+    transition-duration: .3s;
+  }
+
+  section {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.second-img-col {
+    width: 35%;
+
+    img {
+      margin-bottom: 2%;
+    }
+  }
+}
