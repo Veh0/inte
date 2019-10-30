@@ -73,18 +73,18 @@ section[class*="col"] {
       left: 0;
       right: 0;
       bottom: -400px;
-      height: 20vh;
-      transform: skew(0, -10deg);
+      height: 25vh;
+      transform: skew(0, 10deg);
       transition-duration: .5s;
 
       & > * {
-        transform: skew(0, 10deg);
+        transform: skew(0, -10deg);
       }
 
     }
 
     &:hover div.item-infos {
-      bottom: -30px;
+      bottom: -10vh;
     }
   }
 }
