@@ -2,10 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Title</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!--<link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
     <script src="js/menu.js"></script>
@@ -65,25 +67,29 @@
         </li>
     </ul>
 </aside>
-    <header class="container">
+    <header>
+        <div class="container">
+            <section class="header-head">
+                <div class="header-menu">
+                    <img src="img/icons/menu.png" alt="menu">
+                    <a href="#" class="header-link-menu">MENU</a>
+                </div>
 
-        <section class="header-head">
-            <div class="header-menu">
-                <img src="img/icons/menu.png" alt="menu">
-                <a href="#" class="header-link-menu">MENU</a>
-            </div>
+                <div class="header-logotitle">
+                    <h1 class="header-title">La numothèque</h1>
+                    <p class="header-slogan">BIBLIOTHEQUE NUMERIQUE DE GRENOBLE</p>
+                </div>
+                <div class="header-options-profile">
+                    <input type="search" class="header-input-search" placeholder="Rechercher">
+                    <img src="img/icons/search.png" alt="Rechercher">
+                    <a href="#" class="header-link-profile">MON COMPTE</a>
+                </div>
+            </section>
+        </div>
+    </header>
 
-            <div class="header-logotitle">
-                <h1 class="header-title">La numothèque</h1>
-                <p class="header-slogan">BIBLIOTHEQUE NUMERIQUE DE GRENOBLE</p>
-            </div>
-            <div class="header-options-profile">
-                <input type="search" class="header-input-search" placeholder="Rechercher">
-                <img src="img/icons/search.png" alt="Rechercher">
-                <a href="#" class="header-link-profile">MON COMPTE</a>
-            </div>
-        </section>
-        <section class="header-navigation">
+    <main class="container">
+        <section class="main-navigation">
             <ul>
                 <li>LES NOUVEAUTES</li>
                 <li>
@@ -124,9 +130,6 @@
                 </li>
             </ul>
         </section>
-    </header>
-
-    <main class="container">
         <section class="main-body">
             <section class="first-img-col">
 

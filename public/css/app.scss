@@ -22,6 +22,7 @@ $font-title: 'PoiretOne', sans serif;
 
 html {
   font-size: 62.5%;
+  width: 100%;
   font-family: Roboto, sans-serif;
 }
 div {
@@ -43,5 +44,8 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
-  z-index: 0;
 }
+
+@import "main";
+@import "footer";
+@import "header";

@@ -1,4 +1,4 @@
-@import "app";
+//@import "app";
 
 footer {
   background-color: $background-color-footer;
@@ -84,3 +84,79 @@ div.container {
     }
   }
 }
+
+//** MEDIA QUERIES **//
+
+@media screen and (max-width: 1024px){
+  footer {
+    ul {
+      padding: 0;
+    }
+  }
+
+  footer div.container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    section.footer-logo {
+      width: 50%;
+      order: 3;
+    }
+
+    section.footer-network {
+      width: 50%;
+      order: 4;
+    }
+
+    section.footer-nav-helper, section.footer-nav-infos {
+      width: 50%;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    section.footer-nav-infos {
+      order: 2;
+    }
+
+    section.footer-nav-helper {
+      order: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 760px){
+  footer {
+    ul {
+      padding: 0;
+    }
+  }
+
+  footer div.container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    section.footer-logo {
+      width: 90%;
+      order: 1;
+    }
+
+    section.footer-network {
+      width: 80%;
+      order: 4;
+    }
+
+    section.footer-nav-helper, section.footer-nav-infos {
+      width: 50%;
+      text-align: center;
+    }
+
+    section.footer-nav-helper {
+      order: 2;
+    }
+
+    section.footer-nav-infos {
+      order: 3;
+    }
+  }
+}
+
